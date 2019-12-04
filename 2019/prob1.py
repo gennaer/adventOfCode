@@ -16,7 +16,7 @@ def adjustFuel(orig_fuel):
 fuel_total = 0
 adj_fuel_total = 0
 # read in the input file
-with open('input.txt','r') as f:
+with open('input_p1.txt','r') as f:
 	for line in f:
 		module_fuel = compFuel(line)
 		adj_module_fuel = adjustFuel(module_fuel)

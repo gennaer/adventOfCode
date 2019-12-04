@@ -1,6 +1,6 @@
 
 codes = []
-with open('input.txt','r') as f:
+with open('input_p2.txt','r') as f:
 	d = f.readline().split(',') # assuming just one line
 	for opcode in d:
 		codes.append(int(opcode)) 

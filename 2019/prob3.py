@@ -1,9 +1,13 @@
 wires = []
-with open('input.txt','r') as f:
+with open('input_p3.txt','r') as f:
 	for lines in f:
 		wires.append(lines.split(','))
 
-# really dumb, memory-inefficient, Matlab-y way that does not scale:
+# really dumb, memory-inefficient, Matlab-y way that does not scale
+# the much saner way is to store only the coordinates of visited locations
+# e.g. as a set or list and then compare them for matches (intersection)
+# across wires
+
 import numpy as np
 grid = np.zeros((len(wires),25001,25001), dtype=np.int)
 
